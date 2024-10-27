@@ -1,0 +1,90 @@
+.sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sign form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign form input{
+    border: 1px solid #e9e9e9;
+    border-radius: 1.1rem;
+    margin-top: 10px;
+    padding: 1rem;
+    width: 30vw;
+}
+.sign form input[type="submit"]{
+    margin-top: 1rem;
+    background-color: #e90b5c;
+    border: 1px solid #e90b5c;
+    color: #fff;
+    transition: 300ms ease-in-out;
+    width: calc(30vw + 34px);
+
+}
+.errorP{
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    width: calc(30vw + 34px);
+    margin-left: 1rem;
+}
+.sign form input[type="submit"]:hover{
+    background-color: #b90a4d;
+    cursor: pointer;
+}
+
+.sign form input::placeholder{
+    color: #c9c9c9;
+}
+@media (max-width: 768px) {
+
+    .sign form input{
+        width: 75vw;
+    }
+    .sign form input[type="submit"]{
+        width: calc(75vw + 34px);
+    
+    }
+    .errorP{
+        width: calc(75vw + 34px);
+    }
+}
+#left-login{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.auth-methods {
+    /* display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; */
+    /* width: 33.8vw; */
+}
+.auth-methods button{
+    border: 1px solid #e9e9e9;
+    border-radius: 1.1rem;
+    padding: 1rem;
+    transition: 300ms ease-in-out;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.auth-methods button:first-child{
+    margin-right: 10px;
+}
+.auth-methods button img{
+    width: 2rem;
+}
+.full-height{
+    height: 100vh;
+}

@@ -1,0 +1,23 @@
+#search-container{
+    display: grid;
+    grid-template-columns: minmax(15rem, .2fr) 1fr;
+    width: 100%;
+}
+#search-container aside{
+    min-height: 100vh;
+    height: 100%;
+    border-right: 1px solid #242424;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+#search-container aside select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#main{
+  /* padding-top: 79px; */
+  height: 100vh;
+  box-sizing: border-box;
+}
+svg{
+    stroke: #2d2d2d;
+}
+span{
+  color: #da0b5b;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+p{
+  color: #dcdcdc;
+}
+a{
+  color: #da0b5b;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+a:hover{
+  transition: 300ms ease-out;
+  cursor: pointer;
+  color: #b90a4d;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+button{
+  /* background-color: #da0b5b; */
+  border: none;
+}
+.link{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+button:hover{
+  transition: 300ms ease-out;
+  cursor: pointer;
+  /* background-color: #b90a4d; */
+}
+.clickeable:hover{
+  cursor: pointer;
+}
+label{
+  color: #b8b8b8;
+}
+form input{
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+ul{
+  padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #101010;
+    color: whitesmoke;
+  }
+  svg{
+    stroke: white;
+  }
+  p{
+    color: #979797;
+  }
+}
+
+/* Para el scroll vertical */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2d2d2d;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #505050;
+  border-radius: 2rem;
+}

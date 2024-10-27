@@ -1,0 +1,66 @@
+.cart-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1rem;
+}
+
+#cart li {
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 20% 55% 15% 10%;
+    align-items: center;
+
+    padding: 1rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #242424;
+}
+
+#cart li h3 {
+    color: white;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+#cart li img {
+    height: 120px;
+}
+
+.remove svg {
+    width: 100%;
+}
+
+.remove {
+    width: 2rem;
+    height: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.color-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#total{
+    background-color: #242424;
+    color: white;
+    height: 100%;
+    width: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+#total button{
+    background-color: red;
+    justify-self: flex-end;
+    color: #fff;
+    transition: 300ms ease-in-out;
+    border-radius: 10px;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 0;
+}

@@ -1,0 +1,116 @@
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw 0 3vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+    /* position: fixed; */
+}
+#search-bar{
+  width: 50vw;
+  padding: .7rem;
+  border-radius: 1rem;
+  box-shadow: none;
+  border: none;
+  /* background-color: #f6f6f6; */
+  color: rgb(234, 234, 234);
+}
+
+#three-bars{
+    background-color: transparent;
+    padding: 0;
+}
+header svg{
+    min-width: 2rem;
+    max-width: 2.4rem;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.buttons a{
+    border: 1px solid #e9e9e9;
+    border-radius: 1.1rem;
+    padding: 8px;
+    transition: 300ms ease-in-out;
+    font-weight: 600;
+    font-size: 14px;
+}
+.buttons #left{
+    background-color: transparent;
+}
+.buttons #right{
+    background-color: #da0b5b;
+    color: white;
+}
+#icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+#icons svg{
+    cursor: pointer;
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    box-sizing: border-box;
+}
+#overlay-content{
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#overlay-content p{
+    margin: 0;
+}
+#overlay-content #profile-icon{
+    width: 3rem;
+}
+#overlay-content .icon-link{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+#overlay-content svg{
+    width: 2rem;
+}
+#overlay-content .icon-link:last-child{
+    justify-content: space-between;
+    /* align-self: flex-end; */
+}
+@media (max-width: 768px) {
+    #overlay{
+        grid-template-columns: 80vw 20vw;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    header {
+      border-bottom: 1px solid #242424;
+    }
+    #search-bar{
+      background-color: #242424;
+      color: white;
+    }
+    .buttons a{
+        border: 1px solid #242424;
+    }
+    #overlay-content{
+        background-color: #101010;
+    }
+}

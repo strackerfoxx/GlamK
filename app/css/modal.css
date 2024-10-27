@@ -1,0 +1,18 @@
+#overlay-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#overlay-modal #modal-container{
+    background-color: #242424;
+}
