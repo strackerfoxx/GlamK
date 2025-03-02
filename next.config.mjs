@@ -8,6 +8,10 @@ const nextConfig = {
         },
         {
           protocol: 'https',
+          hostname: 'ecommerce-backend-7iki.onrender.com',
+        },
+        {
+          protocol: 'https',
           hostname: 'i.imgur.com',
         },
         {
